@@ -128,12 +128,12 @@
                 <div class="card-body">
                     <div id="carouselExampleControls" class="carousel magictime " data-ride="carousel">
                         <div class="carousel-inner">
-                            <div id="remeber" class="carousel-item active">
-                                <div class="w100 row" style="min-height: 60vh;">
-                                    <div class="col-md-4 mt2 text-center">
+                            <div id="remember" class="carousel-item active">
+                                <div id="remember-row" class="w100 row" style="min-height: 60vh;">
+                                    <div id="remember-photocol" class="col-md-4 mt2 text-center photocol">
                                         <img class="img-fluid d-block w-100 img-radius" src="images/Appa-md.png" alt=" slide">
                                     </div>
-                                    <div class="col-md-8 mt-2 text-center text-white">
+                                    <div id="remember-contentcol" class="col-md-8 mt-2 text-center text-white contentcol">
                                         <h4 class="text-white">Remembering my Father</h4><br> 
                                         <h1 class="text-white" style="line-height:65px;font-size: 48px;margin-top:-15px;text-shadow: 4px 4px 4px #2c1703;">
                                             A. KARUTHAPANDIAN</h1> 
@@ -146,7 +146,7 @@
                                 </div>
                             </div> 
                             <div id="blessings" class="carousel-item ">
-                                <div class="row" style="min-height: 60vh;">
+                                <div id="blessings-row" class="row" style="min-height: 60vh;">
                                     <div class="col-lg-6 mt-2 text-center text-white">
                                         <h3 class="text-white">With Blessings of </h3>
                                         <hr class="darkgoldenrod-hr">
@@ -191,7 +191,7 @@
                                 </div>
                             </div> 
                             <div id="NCBR" class="carousel-item" style="background:white">
-                                <div class="w100 row" style="min-height:60vh;">
+                                <div id="NCBR-row" class="w100 row" style="min-height:60vh;">
                                     <div class="col-md-12 mt2 text-center">
                                         <img class="img-fluid" src="images/NCBR.png" alt="slide" style="height:50vh;border-radius:5px"><br>
                                         <div class="alert mt-2">
@@ -201,7 +201,7 @@
                                 </div>
                             </div> 
                             <div id="address" class="carousel-item" style="background:black">
-                                <div class="w100 row" style="min-height:60vh;">
+                                <div id="address-row" class="w100 row" style="min-height:60vh;">
                                     <div class="col-md-6 mt2 text-center">
                                         <img class="img-fluid" src="images/home.png" alt="slide" style="height:50vh;border-radius:5px"><br/>
                                     </div>
@@ -220,7 +220,7 @@
                                 </div>
                             </div> 
                             <div id="location" class="carousel-item" style="background:black">
-                                <div class="w100 row" style="min-height:60vh;"> 
+                                <div id="location-row" class="w100 row" style="min-height:60vh;"> 
                                     <div class="col-md-12 mt2 text-center" style="background: #161653;padding-right:20px"> 
                                         <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1945.417943149223!2d80.20982193853378!3d12.789162496877434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s7M42Q6Q6%2BMC9!5e0!3m2!1sen!2sin!4v1685688875399!5m2!1sen!2sin" 
                                             width="80%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -228,7 +228,7 @@
                                 </div>
                             </div> 
                             <div id="thanks" class="carousel-item" style="background:black">
-                                <div class="w100 row" style="min-height:60vh;"> 
+                                <div id="thanks-row" class="w100 row" style="min-height:60vh;"> 
                                     <div class="col-md-12 mt2 text-center" style="background: #161653;padding-right:20px">
                                         <h3 class="text-white mt-4" style="color:gold !important">Thank you</h3>
                                         <hr class="darkgoldenrod-hr"/>
@@ -253,5 +253,39 @@
     <script src="assets/dist/js/vendor-all.min.js"></script>
     <script src="assets/dist/js/plugins/bootstrap.min.js"></script>
     <script src="assets/dist/js/ripple.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+        integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    
+    <script>    
+        let orientation = 0;
+        var supportsOrientationChange = "onorientationchange" in window,
+        orientationEvent = supportsOrientationChange ? "orientationchange" : "resize";
+        window.addEventListener(orientationEvent, function() {
+            //alert('HOLY ROTATING SCREENS ORIENTATION:' + window.orientation);
+            orientation = window.orientation;
+            tweakSizing();
+        }, false);
+
+        let rowsColl = ["remember", "blessings", "NCBR", "address", "location", "thanks"];
+		$(document).ready(function() { 
+			tweakSizing();		
+		});
+
+        function tweakSizing(orientation){
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+                if(orientation == 0){
+                    _.forEach(rowsColl, row => {
+                    $("#"+row+"-row").css("display", "grid"); 
+                 });
+                }
+			} else {
+				
+			}
+        }
+
+	</script>
     </body>
 </html>
