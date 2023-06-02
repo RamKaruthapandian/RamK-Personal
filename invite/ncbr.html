@@ -93,6 +93,32 @@
 			margin-left: 47.5%;
 			border: 2px solid darkgray;
 		} 
+
+        .isMobile.remphoto {
+            width: 45vw !important;
+            height: 20vh !important;
+        }
+        .isMobile.mblPhoto { 
+            height: 20vh !important;
+        }
+        .isMobile.f-38{
+            font-size: 38px !important;
+        } 
+        .isMobile.mbltext{
+            font-size: 24px !important;
+        } 
+        .isMobile.mblsmalltext{
+            font-size: 125% !important;
+            white-space: nowrap !important;
+        }
+        .isMobile.mblrow{
+            margin-left: 25px;
+        }
+
+        table[data-display='onlyMOBILE'] td {
+            border: none !important;
+        }
+        
         </style>
     </head>
     <body class="" style="background:-webkit-linear-gradient(194deg, #2d1677 0%, rgb(28, 138, 218) 35%, rgb(76 7 63) 100%) no-repeat fixed center !important;overflow-x:hidden">
@@ -103,6 +129,11 @@
 			<h5 class="ncbr-txt">NCBR</h5>
 			<h6 class="text-white ml-2 mt-2">House Warming<h6>
 		</div>  
+        <div style="right: 10px; top: 10px; display: inline-block;
+        float: right;padding: 0; position: absolute;">
+            <span class="h4 mblsmalltext">June 5th, 2023</span><br/>
+            <span class="h4 mblsmalltext">Thaiyur, Kelambakkam</span>
+        </div>
 	</header>
     <div class="w-100 invite-hdr"> 
 		<div class="row-no-margin w-100 text-center">
@@ -130,17 +161,18 @@
                         <div class="carousel-inner">
                             <div id="remember" class="carousel-item active">
                                 <div id="remember-row" class="w100 row" style="min-height: 60vh;">
-                                    <div id="remember-photocol" class="col-md-4 mt2 text-center photocol">
-                                        <img class="img-fluid d-block w-100 img-radius" src="images/Appa-md.png" alt=" slide">
+                                    <div class="col-md-4 mt2 text-center photocol">
+                                        <img id="remember-photo" class="img-fluid d-block w-100 img-radius remphoto" src="images/Appa-md.png" alt=" slide">
                                     </div>
                                     <div id="remember-contentcol" class="col-md-8 mt-2 text-center text-white contentcol">
-                                        <h4 class="text-white">Remembering my Father</h4><br> 
-                                        <h1 class="text-white" style="line-height:65px;font-size: 48px;margin-top:-15px;text-shadow: 4px 4px 4px #2c1703;">
-                                            A. KARUTHAPANDIAN</h1> 
+                                        <h4 class="text-white">In the remembrance of my <b>Father</b></h4><br> 
+                                        <h1 class="text-white isMobile f-38" style="line-height:65px;font-size: 48px;margin-top:-15px;text-shadow: 4px 4px 4px #2c1703;">
+                                            A. KARUTHAPANDIAN
+                                        </h1> 
                                         <h4 class="text-warning">M.A M.ED, Rtd. HeadMaster</h4><br>
                                         <div class="alert alert-primary">
-                                            <h4 style="line-height: 50px;">Sadly missed along life's way, quietly remembered every day...<br></h4>
-                                            <h3 style="line-height: 50px;">No longer in our life, but in our hearts, you're always there</h3>
+                                            <h4 class="h4 mbltext" style="line-height: 50px;">Sadly missed along life's way, quietly remembered every day...<br></h4>
+                                            <h3 class="h3 mbltext" style="line-height: 50px;">No longer in our life, but in our hearts, you're always there</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -150,52 +182,87 @@
                                     <div class="col-lg-6 mt-2 text-center text-white">
                                         <h3 class="text-white">With Blessings of </h3>
                                         <hr class="darkgoldenrod-hr">
-                                        <div class="row w-100">
+                                        <table data-display="onlyMOBILE" class="table">
+                                            <tr>
+                                                <td style="max-width: 25%;">
+                                                    <div class="text-right"><img class="img-radius" src="images/Appa-md.png" alt="" style="width: 60px !important;"></div>
+                                                </td>
+                                                <td style="max-width: 75%;">
+                                                    <h5 class="text-white text-left mt-4 mblsmalltext">A. Karuthapandian (Late)</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="max-width: 25%;">
+                                                    <div class="text-right"><img class="img-radius" src="images/Amma-small.png" alt="" style="width: 60px !important;"></div>
+                                                </td>
+                                                <td style="max-width: 75%;">
+                                                    <h5 class="text-white text-left mt-4 mblsmalltext">A. Shunmuga Sundari</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="max-width: 25%;">
+                                                    <div class="text-right"><img class="img-radius" src="images/Mama-small.png" alt="" style="width: 60px !important;"></div>
+                                                </td>
+                                                <td style="max-width: 75%;">
+                                                    <h5 class="text-white text-left mt-4 mblsmalltext">S. Karuppasamy</h5>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="max-width: 25%;">
+                                                    <div class="text-right"><img class="img-radius" src="images/Athai-small.png" alt="" style="width: 60px !important;"></div>
+                                                </td>
+                                                <td style="max-width: 75%;">
+                                                    <h5 class="text-white text-left mt-4 mblsmalltext">K. Saraswathi Lakshmi</h5>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div data-display="onlyWEB" class="row w-100">
                                             <div class="col-sm-4 text-right">
                                                 <img class="img-radius" src="images/Appa-md.png" alt="" style="width: 60px !important;">
                                             </div>
-                                            <div class="col-sm-8 mt-3 text-left">
-                                                <h5 class="text-white">A. Karuthapandian (Late)</h5>
+                                            <div class="col-sm-8 mt-3 text-left mblsmalltext">
+                                                <h5 class="text-white mblsmalltext">A. Karuthapandian (Late)</h5>
                                             </div> 
-                                        </div>
-                                        <div class="row w-100 mt-1">
+                                        </div> 
+                                        <div data-display="onlyWEB" class="row w-100 mt-1">
                                             <div class="col-sm-4 text-right">
                                                 <img class="img-radius" src="images/Amma-small.png" alt="" style="width: 60px !important;">
                                             </div>
-                                            <div class="col-sm-8 mt-3 text-left">
-                                                <h5 class="text-white">A. Shunmuga Sundari</h5>
+                                            <div class="col-sm-8 mt-3 text-left mblsmalltext">
+                                                <h5 class="text-white mblsmalltext">A. Shunmuga Sundari</h5>
                                             </div> 
                                         </div>  
-                                        <div class="row w-100 mt-2">
+                                        <div data-display="onlyWEB" class="row w-100 mt-2 mblrow">
                                             <div class="col-sm-4 text-right">
                                                 <img class="img-radius" src="images/Mama-small.png" alt="" style="width: 60px !important;">
                                             </div>
-                                            <div class="col-sm-8 mt-3 text-left">
-                                                <h5 class="text-white">S. Karuppasamy</h5>
+                                            <div class="col-sm-8 mt-3 text-left mblsmalltext">
+                                                <h5 class="text-white mblsmalltext">S. Karuppasamy</h5>
                                             </div> 
                                         </div>  
-                                        <div class="row w-100 mt-1">
+                                        <div data-display="onlyWEB" class="row w-100 mt-1 mblrow">
                                             <div class="col-sm-4 text-right">
                                                 <img class="img-radius" src="images/Athai-small.png" alt="" style="width: 60px !important;">
                                             </div>
-                                            <div class="col-sm-8 mt-3 text-left">
-                                                <h5 class="text-white">K. Saraswathy Lakshmi</h5>
+                                            <div class="col-sm-8 mt-3 text-left mblsmalltext">
+                                                <h5 class="text-white mblsmalltext">K. Saraswathi Lakshmi</h5>
                                             </div> 
                                         </div>  
                                     </div>
                                     <div class="col-lg-6 mt-2 text-center text-white">
-                                        <h3 class="text-white">& Support of  </h4><hr class="darkgoldenrod-hr">
-                                        <h4 class="text-white">My Belowed Brother & Sister,</h5>
-                                        <h4 class="text-white">Entire Family and Friends</h5>
+                                        <h3 class="text-white">& Support of </h4>
+                                        <hr class="darkgoldenrod-hr">
+                                        <h4 class="mbltext text-white">My Belowed Brother & Sister,</h5>
+                                        <h4 class="mbltext text-white">Entire Family and Friends</h5>
                                     </div>
                                 </div>
                             </div> 
                             <div id="NCBR" class="carousel-item" style="background:white">
                                 <div id="NCBR-row" class="w100 row" style="min-height:60vh;">
                                     <div class="col-md-12 mt2 text-center">
-                                        <img class="img-fluid" src="images/NCBR.png" alt="slide" style="height:50vh;border-radius:5px"><br>
-                                        <div class="alert mt-2">
-                                            <h5 class="text-warning">Named after my MENTORS</h5>
+                                        <img class="img-fluid mblPhoto" src="images/NCBR.png" alt="slide" style="height:50vh;border-radius:5px"><br>
+                                        <div class="alert alert-primary mt-2">
+                                            <h5 class="h5">Named after my MENTORS</h5>
                                         </div>
                                     </div> 
                                 </div>
@@ -203,7 +270,7 @@
                             <div id="address" class="carousel-item" style="background:black">
                                 <div id="address-row" class="w100 row" style="min-height:60vh;">
                                     <div class="col-md-6 mt2 text-center">
-                                        <img class="img-fluid" src="images/home.png" alt="slide" style="height:50vh;border-radius:5px"><br/>
+                                        <img class="img-fluid mblPhoto" src="images/home.png" alt="slide" style="height:50vh;border-radius:5px"><br/>
                                     </div>
                                     <div class="col-md-6 mt2 text-center">
                                         <h3 class="text-white mt-4" style="color:gold !important">NCBR Pranav's Home</h3>
@@ -221,9 +288,18 @@
                             </div> 
                             <div id="location" class="carousel-item" style="background:black">
                                 <div id="location-row" class="w100 row" style="min-height:60vh;"> 
-                                    <div class="col-md-12 mt2 text-center" style="background: #161653;padding-right:20px"> 
-                                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1945.417943149223!2d80.20982193853378!3d12.789162496877434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s7M42Q6Q6%2BMC9!5e0!3m2!1sen!2sin!4v1685688875399!5m2!1sen!2sin" 
-                                            width="80%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <div class="p-2 pl-3" style="display: grid;">
+                                        <div class="p-2" style="line-height: 35px;">
+                                            <h4 class="text-white"><b><a href="https://goo.gl/maps/EhBASD7kMusMNc6g7" target="_blank" class="btn btn-primary">
+                                            <b class="f-16">GPS</b> 12.789183, 80.210788 </a></b></h4>
+                                            <h4 class="text-white"><b><a href="https://goo.gl/maps/x67Y9FfDpnG7kC4R8" target="_blank" class="btn btn-primary">
+                                                <b class="f-16">Location</b> Link </a></b></h4>
+                                        </div> 
+                                    </div> 
+                                    <div class="col-md-12 mt2 text-left" style="background: #161653;padding-right:20px"> 
+                                        <div class="p-2" style="line-height: 35px;"><h4 class="text-white"><b>Location Map</b></h4></div>
+                                        <iframe id="locationMapIFR" class="p-2" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1945.417943149223!2d80.20982193853378!3d12.789162496877434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s7M42Q6Q6%2BMC9!5e0!3m2!1sen!2sin!4v1685688875399!5m2!1sen!2sin" 
+                                            width="90%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                     </div> 
                                 </div>
                             </div> 
@@ -231,11 +307,9 @@
                                 <div id="thanks-row" class="w100 row" style="min-height:60vh;"> 
                                     <div class="col-md-12 mt2 text-center" style="background: #161653;padding-right:20px">
                                         <h3 class="text-white mt-4" style="color:gold !important">Thank you</h3>
-                                        <hr class="darkgoldenrod-hr"/>
-                                        <h4 class="text-white">To be in Touch : </h4>
+                                        <hr class="darkgoldenrod-hr"/> 
                                         <h4 class="text-white">Ramakannan Karuthapandian</h5>
-                                        <h3 class="text-white mt-4" style="color:gold !important">90039 85106</h3>
-                                        <h3 class="text-white mt-4" style="color:gold !important">90039 85106</h3>
+                                        <h3 class="text-white mt-4" style="color:gold !important">+91 90039 85106</h3> 
                                     </div> 
                                 </div>
                             </div> 
@@ -277,13 +351,27 @@
             var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); 
             console.log("isMobile "+isMobile);
             if (isMobile) {
+
+                $("[data-display='onlyWEB']").hide();
+                $("[data-display='onlyMOBILE']").show();
+
                 if(orientation == 0){
                     _.forEach(rowsColl, row => {
                     $("#"+row+"-row").css("display", "grid"); 
                  });
+
+                 $("#remember-photo").removeClass("w-100 d-block");
+                 $("#remember-photo").addClass("isMobile");
+
+                 $(".mblPhoto").addClass("isMobile");
+                 $(".mblrow").addClass("isMobile");
+                 $(".mbltext").addClass("isMobile");
+                 $(".mblsmalltext").addClass("isMobile");
+
                 }
 			} else {
-				
+				$("[data-display='onlyWEB']").show();
+                $("[data-display='onlyMOBILE']").hide();
 			}
         }
 
