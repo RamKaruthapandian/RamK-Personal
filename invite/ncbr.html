@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>N.C.B.R</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.75, user-scalable=0, minimal-ui">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="">
+        <meta name="author" content="Ram Karuthapandian" />
+        <link rel="icon" href="assets/brand/fav.ico" type="image/x-icon">
+
+        <!-- vendor css -->
+        <link rel="stylesheet" href="assets/dist/css/plugins/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="assets/dist/css/plugins/bootstrap-tagsinput.css">
+        <link rel="stylesheet" href="assets/dist/css/plugins/trumbowyg.min.css">
+        <link rel="stylesheet" href="assets/dist/css/style.css">
+        <style>
+            .super-hdr {
+                margin: 0;
+                width: 100%;
+                height: 65px;
+                padding: 15px;
+                background: -webkit-linear-gradient(194deg, #2d1677 0%, rgb(28, 138, 218) 35%, rgb(76 7 63) 100%) no-repeat fixed center !important;
+                box-shadow: 0 5px 11px 0px rgb(30 17 87 / 40%);
+            }
+            .ncbr-txt {
+                color:red;font-size: 48px;margin-top: -15px;text-shadow: 4px 4px 4px #2c1703;
+            }
+            .invite-hdr {
+                position: fixed;
+                box-shadow: 0 5px 11px 0px rgba(69, 90, 100, 0.3);
+                top: 65px !important;
+                border: 0px solid white;
+                background: #050231;
+            }
+            .invite-hdr2 {
+                color: gold imo !important; 
+                line-height: 40px;
+                font-size: 110% !important;
+                letter-spacing: 2.25px;
+                text-transform: capitalize;
+            }
+            .darkgoldenrod-hr {
+                border-top: 1px solid yellow;
+                border-color: darkgoldenrod;
+            }
+            .YFlihe {
+                height: 64px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-flex: 0;
+                -webkit-flex: none;
+                flex: none;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+            }   
+            .carousel-control-prev, .carousel-control-next, .carousel-control-pauseplay {
+			position: absolute;
+			top: -25px;
+			bottom: 0;
+			z-index: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 15%;
+			color: #fff;
+			text-align: center;
+			opacity: 0.9;
+			transition: opacity 0.15s ease;
+			background-color : #DDD;
+			border-radius: 50%;
+			box-shadow: 0 10px 5px -8px rgba(0, 0, 0, 0.4);
+		}
+		.carousel-control-prev {
+			height: 50px;
+			width: 50px;
+			margin-left: 3%;
+			border: 1px solid darkgray; 
+		}
+		.carousel-control-next {
+			height: 50px;
+			width: 50px;
+			margin-right: 3%;
+			border: 1px solid darkgray; 
+		}
+		.carousel-control-pauseplay {
+			height: 60px;
+			width: 60px;
+			margin-top: -5px !important;
+			margin-left: 47.5%;
+			border: 2px solid darkgray;
+		} 
+        </style>
+    </head>
+    <body class="" style="background:-webkit-linear-gradient(194deg, #2d1677 0%, rgb(28, 138, 218) 35%, rgb(76 7 63) 100%) no-repeat fixed center !important;overflow-x:hidden">
+    
+    <header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue headerpos-fixed" 
+		style="padding-right:0px;z-index:99999998;background:transparent!important">
+		<div class="row super-hdr" >
+			<h5 class="ncbr-txt">NCBR</h5>
+			<h6 class="text-white ml-2 mt-2">House Warming<h6>
+		</div>  
+	</header>
+    <div class="w-100 invite-hdr"> 
+		<div class="row-no-margin w-100 text-center">
+			<div class="col-sm-12 mt-2">
+                <div class="row">
+                    <div class="col-sm-2">&nbsp;</div>
+                    <div class="col-sm-8 d-inline-flex" style="align-items: center; justify-content: center;">
+                        <h4 class="text-success mr-3"><img class="img-radius mr-2" src="images/Pranav-small2.png" alt="" style="width: 60px !important;">Pranav</h4>
+                        <h4 class="text-success mr-3"><img class="img-radius mr-2" src="images/Ananthi-small2.png" alt="" style="width: 60px !important;">Ananthi </h4>
+                        <h4 class="text-success mr-3"><img class="img-radius mr-2" src="images/Ram-small.png" alt="" style="width: 60px !important;">Ram </h4>                 
+                        <div class="text-center d-inline-flex invite-hdr2">
+                            <span class="ml-2 text-white mr-2 mb-2" style="color: gold !important;">inviting you</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">&nbsp;</div>
+                </div>
+			</div>
+		</div> 
+	</div>
+    <div class="w-100 text-white" style="margin-top:160px"> 
+        <div class="row-no-margin" style="padding:10px;max-height:40vh"> 
+            <div class="col-sm-12">  
+                <div class="card-body">
+                    <div id="carouselExampleControls" class="carousel magictime " data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div id="remeber" class="carousel-item active">
+                                <div class="w100 row" style="min-height: 60vh;">
+                                    <div class="col-md-4 mt2 text-center">
+                                        <img class="img-fluid d-block w-100 img-radius" src="images/Appa-md.png" alt=" slide">
+                                    </div>
+                                    <div class="col-md-8 mt-2 text-center text-white">
+                                        <h4 class="text-white">Remembering my Father</h4><br> 
+                                        <h1 class="text-white" style="line-height:65px;font-size: 48px;margin-top:-15px;text-shadow: 4px 4px 4px #2c1703;">
+                                            A. KARUTHAPANDIAN</h1> 
+                                        <h4 class="text-warning">M.A M.ED, Rtd. HeadMaster</h4><br>
+                                        <div class="alert alert-primary">
+                                            <h4 style="line-height: 50px;">Sadly missed along life's way, quietly remembered every day...<br></h4>
+                                            <h3 style="line-height: 50px;">No longer in our life, but in our hearts, you're always there</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div id="blessings" class="carousel-item ">
+                                <div class="row" style="min-height: 60vh;">
+                                    <div class="col-lg-6 mt-2 text-center text-white">
+                                        <h3 class="text-white">With Blessings of </h3>
+                                        <hr class="darkgoldenrod-hr">
+                                        <div class="row w-100">
+                                            <div class="col-sm-4 text-right">
+                                                <img class="img-radius" src="images/Appa-md.png" alt="" style="width: 60px !important;">
+                                            </div>
+                                            <div class="col-sm-8 mt-3 text-left">
+                                                <h5 class="text-white">A. Karuthapandian (Late)</h5>
+                                            </div> 
+                                        </div>
+                                        <div class="row w-100 mt-1">
+                                            <div class="col-sm-4 text-right">
+                                                <img class="img-radius" src="images/Amma-small.png" alt="" style="width: 60px !important;">
+                                            </div>
+                                            <div class="col-sm-8 mt-3 text-left">
+                                                <h5 class="text-white">A. Shunmuga Sundari</h5>
+                                            </div> 
+                                        </div>  
+                                        <div class="row w-100 mt-2">
+                                            <div class="col-sm-4 text-right">
+                                                <img class="img-radius" src="images/Mama-small.png" alt="" style="width: 60px !important;">
+                                            </div>
+                                            <div class="col-sm-8 mt-3 text-left">
+                                                <h5 class="text-white">S. Karuppasamy</h5>
+                                            </div> 
+                                        </div>  
+                                        <div class="row w-100 mt-1">
+                                            <div class="col-sm-4 text-right">
+                                                <img class="img-radius" src="images/Athai-small.png" alt="" style="width: 60px !important;">
+                                            </div>
+                                            <div class="col-sm-8 mt-3 text-left">
+                                                <h5 class="text-white">K. Saraswathy Lakshmi</h5>
+                                            </div> 
+                                        </div>  
+                                    </div>
+                                    <div class="col-lg-6 mt-2 text-center text-white">
+                                        <h3 class="text-white">& Support of  </h4><hr class="darkgoldenrod-hr">
+                                        <h4 class="text-white">My Belowed Brother & Sister,</h5>
+                                        <h4 class="text-white">Entire Family and Friends</h5>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div id="NCBR" class="carousel-item" style="background:white">
+                                <div class="w100 row" style="min-height:60vh;">
+                                    <div class="col-md-12 mt2 text-center">
+                                        <img class="img-fluid" src="images/NCBR.png" alt="slide" style="height:50vh;border-radius:5px"><br>
+                                        <div class="alert mt-2">
+                                            <h5 class="text-warning">Named after my MENTORS</h5>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div> 
+                            <div id="address" class="carousel-item" style="background:black">
+                                <div class="w100 row" style="min-height:60vh;">
+                                    <div class="col-md-6 mt2 text-center">
+                                        <img class="img-fluid" src="images/home.png" alt="slide" style="height:50vh;border-radius:5px"><br/>
+                                    </div>
+                                    <div class="col-md-6 mt2 text-center">
+                                        <h3 class="text-white mt-4" style="color:gold !important">NCBR Pranav's Home</h3>
+                                        <hr class="darkgoldenrod-hr"/>
+                                        <h4 class="text-white">No 94/2, Thaiyur A Village</h4>
+                                        <h4 class="text-white">Kelambakkam, Chennai 603103</h4>
+                                        <a href="https://goo.gl/maps/EhBASD7kMusMNc6g7" target="_blank" class="btn btn-primary">
+                                            <b class="f-16">GPS</b> 12.789183, 80.210788 </a>
+                                        <br>  
+                                        <h3 class="text-white mt-4" style="color:gold !important">June, 5th, 2023</h3>
+                                        <hr class="darkgoldenrod-hr"/>
+                                        <h4 class="text-white">9:00 AM IST to 2 PM IST</h4>  
+                                    </div>
+                                </div>
+                            </div> 
+                            <div id="location" class="carousel-item" style="background:black">
+                                <div class="w100 row" style="min-height:60vh;"> 
+                                    <div class="col-md-12 mt2 text-center" style="background: #161653;padding-right:20px"> 
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1945.417943149223!2d80.20982193853378!3d12.789162496877434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s7M42Q6Q6%2BMC9!5e0!3m2!1sen!2sin!4v1685688875399!5m2!1sen!2sin" 
+                                            width="80%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div> 
+                                </div>
+                            </div> 
+                            <div id="thanks" class="carousel-item" style="background:black">
+                                <div class="w100 row" style="min-height:60vh;"> 
+                                    <div class="col-md-12 mt2 text-center" style="background: #161653;padding-right:20px">
+                                        <h3 class="text-white mt-4" style="color:gold !important">Thank you</h3>
+                                        <hr class="darkgoldenrod-hr"/>
+                                        <h4 class="text-white">To be in Touch : </h4>
+                                        <h4 class="text-white">Ramakannan Karuthapandian</h5>
+                                        <h3 class="text-white mt-4" style="color:gold !important">90039 85106</h3>
+                                        <h3 class="text-white mt-4" style="color:gold !important">90039 85106</h3>
+                                    </div> 
+                                </div>
+                            </div> 
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- liveline-section end -->
+        </div> 
+    </div>
+    
+    <!-- Required Js --> 
+    <script src="assets/dist/js/vendor-all.min.js"></script>
+    <script src="assets/dist/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/dist/js/ripple.js"></script>
+    </body>
+</html>
