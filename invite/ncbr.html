@@ -265,16 +265,17 @@
         window.addEventListener(orientationEvent, function() {
             //alert('HOLY ROTATING SCREENS ORIENTATION:' + window.orientation);
             orientation = window.orientation;
-            tweakSizing();
+            tweakSizing(orientation);
         }, false);
 
         let rowsColl = ["remember", "blessings", "NCBR", "address", "location", "thanks"];
 		$(document).ready(function() { 
-			tweakSizing();		
+			tweakSizing(orientation);		
 		});
 
         function tweakSizing(orientation){
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); 
+            console.log("isMobile "+isMobile);
             if (isMobile) {
                 if(orientation == 0){
                     _.forEach(rowsColl, row => {
